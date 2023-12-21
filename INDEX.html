@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Product Viewer</title>
+</head>
+<body>
+  <div class="container">
+    <div id="import-screen">
+      <label for="jsonFile">Import JSON File:</label>
+      <input type="file" id="jsonFile" accept=".json">
+      <button onclick="importData()">Import</button>
+    </div>
+
+    <div id="display-options">
+      <select id="availableFields" multiple></select>
+      <div class="buttons">
+        <button onclick="addSelected()">>></button>
+        <button onclick="removeSelected()"></button>
+      </div>
+      <select id="displayFields" multiple></select>
+    </div>
+
+    <table id="productTable">
+      
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

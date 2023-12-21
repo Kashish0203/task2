@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#display-options {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+select, button {
+  margin: 5px;
+}
